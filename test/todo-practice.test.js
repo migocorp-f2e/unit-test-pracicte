@@ -14,20 +14,20 @@ test case:
 
 */
 
-// import { expect } from 'chai';
+import { expect } from 'chai';
 
-// describe('todo practice', () => {
-//     let phone = ['Iphone6s', 'Iphone6s+'];
+describe('todo practice', () => {
+    let phone = ['Iphone6s', 'Iphone6s+'];
 
-//     it('array length', () => {
-//         expect(phone).to.have.length(2);
-//     });
+    it('array length', () => {
+        expect(phone).to.have.length(2);
+    });
 
-//     it('array not empty', () => {
-//         expect(phone).to.not.be.empty;
-//     });
+    it('array not empty', () => {
+        expect(phone).to.not.be.empty;
+    });
 
-//     it('array include', () => {
-//         expect(phone).to.include('Iphone6s');
-//     });
-// });
+    it('array include', () => {
+        expect(phone).to.include('Iphone6s');
+    });
+});
