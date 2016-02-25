@@ -16,26 +16,26 @@ test case:
     2) 更新 phone 的 type = 'iPhone6sPlus' 並通過 test case
 */
 
-// import { expect } from 'chai';
-// import { updateDate } from '../src/core.js';
+import { expect } from 'chai';
+import { updateDate } from '../src/core.js';
 
-// describe('todo practice', () => {
-//     let phone = {
-//         type   : 'iPhone6s',
-//         display: '4-7',
-//         storage: '64GB'
-//     };
+describe('todo practice', () => {
+    let phone = {
+        type   : 'iPhone6s',
+        display: '4-7',
+        storage: '64GB'
+    };
 
-//     it('has all keys', () => {
-//         expect(phone).to.not.be.empty;
-//         expect(phone).to.have.all.keys('type', 'display', 'storage');
-//     });
+    it('has all keys', () => {
+        expect(phone).to.not.be.empty;
+        expect(phone).to.have.all.keys('type', 'display', 'storage');
+    });
 
-//     it('update phone', () => {
-//         let update = {
-//             type: 'iPhone6sPlus'
-//         },
-//         newPhone = updateDate(phone, update);
-//         expect(newPhone).to.have.deep.property('type', 'iPhone6sPlus');
-//     });
-// });
+    it('update phone', () => {
+        let update = {
+            type: 'iPhone6sPlus'
+        },
+        newPhone = updateDate(phone, update);
+        expect(newPhone).to.have.deep.property('type', 'iPhone6sPlus');
+    });
+});
