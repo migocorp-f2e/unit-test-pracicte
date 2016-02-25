@@ -11,23 +11,23 @@ test case:
 
 */
 
-// import fetch from 'node-fetch';
-// import { expect } from 'chai';
+import fetch from 'node-fetch';
+import { expect } from 'chai';
 
-// describe('todo practice', () => {
-//     let result;
-//     before(() => {
-//         return fetch('https://api.github.com')
-//             .then((res) => {
-//                 return res.json();
-//             }).then((json) => {
-//                 result = json;
-//             });
-//     });
-//     it('api result length', () => {
-//         expect(result).to.not.be.empty;
-//     });
-//     it('api result keys', () => {
-//         expect(result).to.contain.all.keys(['current_user_url', 'emails_url']);
-//     })
-// });
+describe('todo practice', () => {
+    let result;
+    before(() => {
+        return fetch('https://api.github.com')
+            .then((res) => {
+                return res.json();
+            }).then((json) => {
+                result = json;
+            });
+    });
+    it('api result length', () => {
+        expect(result).to.not.be.empty;
+    });
+    it('api result keys', () => {
+        expect(result).to.contain.all.keys(['current_user_url', 'emails_url']);
+    })
+});
