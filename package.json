@@ -7,7 +7,7 @@
     "test": "mocha --compilers js:babel-core/register --recursive",
     "test:watch": "npm run test -- --watch"
   },
-  "repository": "duncan60/unit-test-practice",
+  "repository": "https://github.com/MigoF2E/unit-test-pracite",
   "author": "Duncan Du <tmduncan60@gmail.com>",
   "license": "MIT",
   "devDependencies": {
